@@ -59,17 +59,17 @@ function showFilms() {
     // add all the fruit names as h1 
     var filmName = document.createElement("h1");
     filmName.classList.add("title");
-    filmName.innerText = film.fields.filmName;
+    filmName.innerText = film.fields.title; 
     filmContainer.append(filmName);
     
     // add all the pics 
     var filmPic = document.createElement("img");
     filmPic.classList.add("poster");
-    filmPic.src = film.fields.filmPic[0].url;
+    filmPic.src = film.fields.poster[0].url;
     filmContainer.append(filmPic);
 
     // create a css class for each fruit with corresponding fruit color 
-    var filmColor = film.fields.filmColor;
+    var filmColor = film.fields.release_season;
     console.log(filmColor );
     filmColor.forEach(function(color) {
       filmContainer.classList.add(color);
