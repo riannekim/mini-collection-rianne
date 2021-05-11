@@ -60,6 +60,12 @@ function showFilms() {
     filmName.classList.add("title");
     filmName.innerText = film.fields.title; 
     filmContainer.append(filmName);
+
+    // add all the film description as h2 
+    var filmDescription = document.createElement("h2");
+    filmDescription.classList.add("description");
+    filmDescription.innerText = film.fields.description; 
+    filmContainer.append(filmDescription);
     
     // add all the pics 
     var filmPic = document.createElement("img");
