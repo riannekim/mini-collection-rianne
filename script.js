@@ -43,7 +43,6 @@ function consoleLogFilms() {
   console.log("consoleLogFilms()");
   films.forEach(film => {
     console.log("Film:", film);
-    console.log(film.fields.filmPic[0].url);
   });
 }
 
@@ -79,36 +78,36 @@ function showFilms() {
     var filterYellow = document.querySelector(".spring");
     filterYellow.addEventListener("click", function() {
       if (filmContainer.classList.contains("spring")) {
-        filmContainer.style.background = "spring";
+        filmContainer.style.background = "pink";
       } else {
-        filmContainer.style.background = "white";
+        filmContainer.style.background = "black";
       }
     });
     // same logic as previous 
     var filterGreen = document.querySelector(".summer");
     filterGreen.addEventListener("click", function() {
       if (filmContainer.classList.contains("summer")) {
-        filmContainer.style.background = "summer";
+        filmContainer.style.background = "yellow";
       } else {
-        filmContainer.style.background = "white";
+        filmContainer.style.background = "black";
       }
     });
     // same logic as previous 
-    var filterOrange = document.querySelector(".fall");
-    filterOrange.addEventListener("click", function() {
-      if (filmContainer.classList.contains("brown")) {
+    var filterFall = document.querySelector(".fall");
+    filterFall.addEventListener("click", function() {
+      if (filmContainer.classList.contains("fall")) {
         filmContainer.style.background = "brown";
       } else {
-        filmContainer.style.background = "white";
+        filmContainer.style.background = "black";
       }
     });
     // same logic as previous 
-    var filterBlue = document.querySelector(".winter");
-    filterBlue.addEventListener("click", function() {
+    var filterWinter = document.querySelector(".winter");
+    filterWinter.addEventListener("click", function() {
       if (filmContainer.classList.contains("winter")) {
-        filmContainer.style.background = "winter";
-      } else {
         filmContainer.style.background = "white";
+      } else {
+        filmContainer.style.background = "black";
       }
     });
   });
